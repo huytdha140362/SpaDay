@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Spaday</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;800&family=Libre+Baskerville&family=Orbitron:wght@900&family=Space+Mono&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+   p {
+    font-family: Baskerville; font-size: 18px; color:#6c6c6c;
+    }
+  h1{
+    font-family:Baskerville; font-size: 500%; color: #99A799;
+  }
+  h2{font-family:Baskerville; color: #99A799 }
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 50px;
+  left: 0px;width: 650px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: -10px;
+  right: 0px; width: 550px;
+}
+
+.button {
+  background-color: #FEF5ED; 
+  border: 3px solid black;
+  color: #99A799;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 0px;
+  cursor: pointer;
+
+}
+
+
+.button {border-radius: 50%;border-color: #99A799}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;}
+
+.servicecard {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #99A799;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.servicecard:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family:Baskerville 
+}
+.bg-img {
+  /* The image used */
+  background-image: url("spa image/8.jpg");width: 100%;
+  background-repeat: no-repeat;
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.footer {
+  position: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #99A799;
+  color: white;
+  text-align: center;
+}
+.fa-facebook {
+  background: #99A799;
+  color: white;
+}
+
+.fa-twitter {
+  background: #99A799;
+  color: white;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body style="background-color:#FEF5ED">
+     <!--navbar-->
+<nav>   
+   <ul class="navbar justify-content-center" style=" color: #FEF5ED">
+    <li class="nav-item">
+    <a class="nav-brand" href="spa.html"> <img src="spa image/logo.png"style="width:50px;"> </a>
+  </li>
+  <a class="navbar-nav" >
+    <li class="nav-item">
+    <a class="nav-link" href="service.html" style="color: #99A799; font-family:Baskerville ">Service</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="about us spa.html" style="color: #99A799; font-family:Baskerville">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href=".html" style="color:#99A799; font-family:Baskerville ">Fitness & Spa</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href=".html" style="color:#99A799; font-family:Baskerville ">Health & Wellness</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href=".html" style="color:#99A799; font-family:Baskerville ">Offers & News</a>
+  </li>
+
+  </a>
+</ul>
+</nav>
+ 
+ <div class="container">
+  <img src="spa image/1.jpg" alt="Snow" style="width:100%;">
+  <div class="row">
+    <div class="top-left"> <h1>The Best Spa Resorts in the U.S. & Around the World.</h1></div>
+  </div>
+    <div class="row">
+      <div class="col">
+        <button class="button button" style="font-family: Baskerville; font-weight: medium;"><a style="color:#99A799 " href="service.html"><span>Book Now</span></a></button>
+        <button class="button button" style="font-family: Baskerville; font-weight: medium;"><a style="color:#99A799 " href="about us spa.html"> <span>Learn More<span></a></button>
+      </div>
+      <div class="col">
+       <div class="bottom-right"><p style="text-align: right; color: #505050; font-size: 150%">La Réserve Genève – Hotel, Spa and Villa is an extraordinary haven where you can meet with your loved ones and enjoy the rare privilege of experiencing unforgettable moments. Everyone at their own pace, according to their individual desires.</p></div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="bg-img">
+<section style="padding-left:180px;padding-top: 300px">
+<div class="Service" style="width: 1130px;">
+  <div class="row">
+    <div class="col">
+          <div class="servicecard">
+           <img src="spa image/7.jpg" alt="Avatar" class="image">
+           <a style="color:#99A799 " href="service.html">
+           <div class="overlay">
+           <div class="text">Spa</div>
+           </div>
+           </a>
+           </div>
+    </div>
+        <div class="col" style="padding-top: 100px">
+          <div class="servicecard">
+           <img src="spa image/6.jpg" alt="Avatar" class="image">
+           <a style="color:#99A799 " href="service.html">
+           <div class="overlay">
+           <div class="text">Skincare</div>
+           </div>
+           </a>
+           </div>
+    </div>
+        <div class="col" style="padding-top: 200px">
+          <div class="servicecard">
+           <img src="spa image/4.jpg" alt="Avatar" class="image">
+           <a style="color:#99A799 " href="service.html">
+           <div class="overlay">
+           <div class="text">Salon</div>
+           </div>
+           </a>
+           </div>
+    </div>
+        <div class="col" style="padding-top: 300px">
+           <div class="servicecard">
+           <img src="spa image/5.jpg" alt="Avatar" class="image">
+           <a style="color:#99A799 " href="service.html">
+           <div class="overlay">
+           <div class="text">Nail</div>
+           </div>
+           </a>
+           </div>
+    </div>
+ </div>
+</div>
+</section>
+</div>
+
+<section style="padding-left: 200px;">
+  <h2 style="text-align:left;color:#99A799; padding-top: 100px; padding-bottom: 30px;font-size: 300%">A spa experience where every sense is indulged</h2>
+ <div class="About" style="width: 1100px">
+   <div class="row">
+     <div class="col">
+      <img src="spa image/9.jpg" style="width: 500px;height: auto;" > 
+     </div>
+     <div class="col">
+       <p style="width: 500px;">The Emirates Palace Spa Abu Dhabi will instantly transport you to another realm, experience exquisite relaxation thanks to purely indulgent packages that aim to ignite a sense of balance and serenity. The 1,500 sqm award-winning Emirates Palace Spa features a traditional Moroccan Hammam that is well appointed with two Jacuzzis, two steam rooms, heated marble and an ice cave.
+
+       Emirates Palace Spa is open daily from 10am to 10pm.</p>
+       <a style="color:#99A799 " href="about us spa.html"><button  style="
+         width: 500px;
+         background-color:#99A799;
+         color: white; 
+         height: 40px;font-family: Baskerville
+
+       ">Learn more</button></a>
+     </div>
+   </div>
+ </div>
+</section>
+<br>
+<br>
+<div class="footer" style="padding-top: 50px; padding-bottom: 50px;padding-left: 215px;padding-right: 215px">
+  <div class="row">
+    <div class="col">
+      <div class="row"><img style="width: 50px" src="spa image/Union.png"></div>
+      <br>
+      <div class="row">
+        <p style="text-align: left; color: white">WEST CORNICHE ROAD, ABU DHABI, UNITED ARAB EMIRATES
+            <br>+971 2 690 8888 | EPAUH-RESERVATIONS@MOHG.COM</p>
+      </div>
+    </div>
+    <div class="col">
+      <input type="your email" name="email" style="height: 40px;width: 400px;padding-bottom: 20px ">
+      
+      <button  style="
+         width: 400px;
+         background-color:#99A799;
+         color: white; 
+         height: 40px;font-family: Baskerville;
+
+
+       ">Submit</button>
+    </div>
+    <div class="col">
+      <P style="color: white">Contact us</P>
+      <a href="https://www.facebook.com/yeuspabeauty" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/Ferragamo" class="fa fa-twitter"></a>
+    </div>
+  </div>
+  
+</div>
+ 
+
+
+
+
+</body>

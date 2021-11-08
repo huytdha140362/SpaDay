@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Spaday</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;800&family=Libre+Baskerville&family=Orbitron:wght@900&family=Space+Mono&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+   p {
+    font-family: Baskerville; font-size: 18px; color:#6c6c6c;
+    }
+  h1{
+    font-family:Baskerville; font-size: 500%; color: #99A799;
+  }
+  h2{font-family:Baskerville; color: #99A799 }
+
+  .fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("spa image/16.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-2 {
+  /* The image used */
+  background-image: url("spa image/17.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.footer {
+  position: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #99A799;
+  color: white;
+  text-align: center;
+}
+.fa-facebook {
+  background: #99A799;
+  color: white;
+}
+
+.fa-twitter {
+  background: #99A799;
+  color: white;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body style="background-color:#FEF5ED">
+     <!--navbar-->
+<nav>   
+   <ul class="navbar justify-content-center" style=" color: #FEF5ED">
+    <li class="nav-item">
+    <a class="nav-brand" href="spa.html"> <img src="spa image/logo.png"style="width:50px;"> </a>
+  </li>
+  <a class="navbar-nav" >
+    <li class="nav-item">
+    <a class="nav-link" href="service.html" style="color: #99A799; font-family:Baskerville ">Service</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="about us spa.html" style="color: #99A799; font-family:Baskerville">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href=".html" style="color:#99A799; font-family:Baskerville ">Fitness & Spa</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href=".html" style="color:#99A799; font-family:Baskerville ">Health & Wellness</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href=".html" style="color:#99A799; font-family:Baskerville ">Offers & News</a>
+  </li>
+
+  </a>
+</ul>
+</nav>
+
+
+
+
+<div class="parallax"></div>
+
+<div style="height:470px;background-color:#99A799;">
+  <h1 style="color: #FEF5ED; margin-left: 450px;font-size:300%; padding-top: 80px; padding-bottom: 20px">About us</h1>
+  <p style="margin-right: 450px; margin-left: 450px;color:#FEF5ED">Located in a dazzling natural bay, Emirates Palace is the perfect destination offering a pristine private beach and marina.The resort’s luxurious rooms and suites offer an exceptional comforting experience, with beautiful ocean and landscaped garden views. Indulge in the award-winning thirteen restaurants and lounges, relax at the impeccable spa or beachfront cabanas. Emirates Palace is an unforgettable lifetime experience.</p>
+</div>
+
+<div class="parallax-2"></div>
+
+<div style="height:1200px;background-color:#FEF5ED;">
+  <div class="row">
+    <div class="col">
+      <h2 style="margin-left: 100px; margin-right: 50px;padding-top: 80px">
+        A LUXURY SALON EXPERIENCE IN THE HEART OF THE FINANCIAL DISTRICT NYC
+      </h2>
+    </div>
+
+    <div class="col">
+      <p style="margin-right: 150px; margin-top: 80px;margin-left: px">
+      The Emirates SpaDay will instantly transport you to another realm, experience exquisite relaxation thanks to purely indulgent packages that aim to ignite a sense of balance and serenity. The 1,500 sqm award-winning Emirates Palace Spa features a traditional Moroccan Hammam that is well appointed with two Jacuzzis, two steam rooms, heated marble and an ice cave.<br><br>
+
+      Spa has teamed up with world-leading The Elixir Clinic to offer guests and members tailor-made IV infusions designed to replenish, reinvigorate and restore wellbeing from the inside out.<br><br>
+
+      Guests will embark on a journey of inner vitality and outer radiance within the serenity of the award-winning Spa. In addition to The Elixir Clinic’s signature IV infusions, an exclusive Emirates Palace VitaDrip® has been carefully formulated with essential vitamins, minerals, amino acids and antioxidants to enhance energy levels, strengthen immunity, rehydrate the body while promoting detox, anti-aging and overall wellbeing.<br><br>
+
+      Available at the Spa or in the comfort of the guestroom, The Elixir Clinic’s bespoke collection of VitaDrip® infusions and vitamin booster shots are customised to the individual’s needs. <br><br>
+
+      SpaDay is open daily from 10am to 10pm.</p>
+    </div>
+    
+  </div>
+
+  <div class="w3-panel w3-leftbar w3-sand" style="padding-top: 100px">
+  <p class="w3-xxlarge w3-serif" style="font-size: 500%;text-align: center;margin-left: 200px; margin-right: 200px">
+  <i>"A spa experience where every sense is indulged"</i></p>
+  
+</div>
+</div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="spa image/20.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="spa image/22.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="spa image/23.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="spa image/24.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="spa image/25.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="spa image/26.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="spa image/20.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="spa image/22.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="spa image/23.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="spa image/24.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="spa image/25.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="spa image/26.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+ 
+<br>
+<br>
+<br>
+<br>
+<br>
+ <div class="footer" style="padding-top: 50px; padding-bottom: 50px;padding-left: 215px;padding-right: 215px">
+  <div class="row">
+    <div class="col">
+      <div class="row"><img style="width: 50px" src="spa image/Union.png"></div>
+      <br>
+      <div class="row">
+        <p style="text-align: left; color: white">WEST CORNICHE ROAD, ABU DHABI, UNITED ARAB EMIRATES
+            <br>+971 2 690 8888 | EPAUH-RESERVATIONS@MOHG.COM</p>
+      </div>
+    </div>
+    <div class="col">
+      <input type="your email" name="email" style="height: 40px;width: 400px;padding-bottom: 20px ">
+      
+      <button  style="
+         width: 400px;
+         background-color:#99A799;
+         color: white; 
+         height: 40px;font-family: Baskerville;
+
+
+       ">Submit</button>
+    </div>
+    <div class="col">
+      <P style="color: white">Contact us</P>
+      <a href="https://www.facebook.com/yeuspabeauty" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/Ferragamo" class="fa fa-twitter"></a>
+    </div>
+  </div>
+  
+</div>
+ 
+
+
+
+
+</body>
